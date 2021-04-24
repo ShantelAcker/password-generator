@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
 
 <body>
-    <h1 id="output">Click the button</h1>
-    <button id="generate-button">Generate Password</button>
+    <h1>Password Generator</h1>
+    <div class="main">
+        <h2 id="output">click the button to generate a random password</h2>
+        <div class="checkboxes" id="checkboxes">
+            <input type="checkbox" id="letters" name="letters" value="Letters" checked>
+            <label for="letters">Letters</label>
+            <input type="checkbox" id="number" name="numbers" value="Numbers" checked>
+            <label for="numbers">Numbers</label>
+            <input type="checkbox" id="special" name="special" value="Special">
+            <label for="special">Special Characters</label>
+            <input type="checkbox" id="unambiguous" name="unambiguous" value="Unambiguous">
+            <label for="unambiguous">Unambiguous Characters</label>
+        </div>
+        <button id="generate-button">Generate Password</button>
+    </div>
+
+    <!-- <h1 id="output">Click the button</h1>
+    <button id="generate-button">Generate Password</button> -->
     <script src="script.js"></script>
 </body>
 
