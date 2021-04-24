@@ -12,22 +12,31 @@
 <body>
     <h1>Password Generator</h1>
     <div class="main">
-        <h2 id="output">click the button to generate a random password</h2>
-        <div class="checkboxes" id="checkboxes">
-            <input type="checkbox" id="letters" name="letters" value="Letters" checked>
-            <label for="letters">Letters</label>
-            <input type="checkbox" id="number" name="numbers" value="Numbers" checked>
-            <label for="numbers">Numbers</label>
-            <input type="checkbox" id="special" name="special" value="Special">
-            <label for="special">Special Characters</label>
-            <input type="checkbox" id="unambiguous" name="unambiguous" value="Unambiguous">
-            <label for="unambiguous">Unambiguous Characters</label>
+        <h2>Click the button to generate a random password:</h2>
+        <p class="output" id="output"></p>
+
+        <div class="checkbox-container">
+            <div class="input-group">
+                <input type="checkbox" class="checkbox" id="letters" name="letters" value="Letters" checked>
+                <label for="letters">Letters</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" class="checkbox" id="numbers" name="numbers" value="Numbers" checked>
+                <label for="numbers">Numbers</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" class="checkbox" id="special" name="special" value="Special">
+                <label for="special">Special Characters</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" class="checkbox" id="unambiguous" name="unambiguous" value="Unambiguous">
+                <label for="unambiguous">Unambiguous Characters</label>
+            </div>
         </div>
-        <button id="generate-button">Generate Password</button>
+
+        <button id="generate-button" class="button">Generate Password</button>
     </div>
 
-    <!-- <h1 id="output">Click the button</h1>
-    <button id="generate-button">Generate Password</button> -->
     <script src="script.js"></script>
 </body>
 
