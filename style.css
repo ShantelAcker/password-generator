@@ -23,6 +23,14 @@ h2 {
     margin-top: 30px;
 }
 
+/* output styles */
+
+.output {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color:hsl(214, 83%, 57%);
+}
+
 /* form styles */
 .checkbox-container {
     display: grid;

@@ -13,12 +13,21 @@
     <h1>Password Generator</h1>
     <div class="main">
         <h2>Click the button to generate a random password:</h2>
-        <p class="output" id="output"></p>
+        <div class="output-outline">
+            <p class="output" id="output">V4ld0$!9bjd</p>
+        </div>
+
 
         <div class="checkbox-container">
             <div class="input-group">
-                <input type="checkbox" class="checkbox" id="letters" name="letters" value="Letters" checked>
-                <label for="letters">Letters</label>
+                <input type="checkbox" class="checkbox" id="lowercase-letters" name="lowercase-letters"
+                    value="Lowercase Letters" checked>
+                <label for="lowercase-letters">Lowercase Letters</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" class="checkbox" id="uppercase-letters" name="uppercase-letters"
+                    value="Uppercase Letters" checked>
+                <label for="uppercase-letters">Uppercase Letters</label>
             </div>
             <div class="input-group">
                 <input type="checkbox" class="checkbox" id="numbers" name="numbers" value="Numbers" checked>
