@@ -6,6 +6,7 @@ const unambiguous = document.getElementById("unambiguous");
 
 const generateButton = document.getElementById("generate-button");
 let printOutput = document.getElementById("output");
+const copyButton = document.getElementById("")
 
 
 let generatePassword = () => {

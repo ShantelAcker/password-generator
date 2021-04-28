@@ -16,32 +16,48 @@ h1 {
 
 h2 {
     font-weight: normal;
-    padding: 2rem 0;
 }
 
 .main {
-    margin-top: 30px;
+    margin-top: 1.5em;
 }
 
 /* output styles */
 
-.output {
-    font-size: 1.3em;
-    margin-bottom: 30px;
-    color:hsl(214, 83%, 57%);
+.output-container {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*copy button styles*/
+.fa-copy {
+    margin-left: .5em;
+    color:#e0e0e0;
+    cursor: pointer;
+}
+
+.fa-copy:hover {
+    color: hsl(214, 83%, 57%);
 }
 
 /* form styles */
-.checkbox-container {
-    display: grid;
+.checkbox-container {    
+    flex-direction: column;
     font-size: 1.3rem;
+    display: grid;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 
 .input-group {
-    text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .button {
@@ -52,7 +68,7 @@ h2 {
     background-color: hsl(214, 83%, 57%);
     color: white;
     font-size: 1.2rem;
-    margin-top: 30px;
+    margin-top: 1em;
 }
 
 .button:hover {
@@ -68,12 +84,38 @@ input[type="checkbox"] {
     background-color: gray;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
     cursor: pointer;
+    padding-left: 1em;
 }
 
 input[type="checkbox"]:after {
-    
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #bebdbd;
+}
+
+input[type="checkbox"]:checked {
+    background-color: hsl(214, 83%, 57%);
+}
+
+input[type="checkbox"]:checked:hover {
+    color: hsl(214, 83%, 57%);
+    background-color: hsl(214, 83%, 80%);
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
 }
