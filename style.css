@@ -34,8 +34,9 @@ h2 {
 /* form styles */
 .checkbox-container {
     display: grid;
-    justify-content: center;
     font-size: 1.3rem;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .input-group {
@@ -57,4 +58,22 @@ h2 {
 .button:hover {
     color: hsl(214, 83%, 57%);
     background-color: hsl(214, 83%, 80%);
+}
+
+/* custom checkbox styles */
+input[type="checkbox"] {
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:after {
+    
 }

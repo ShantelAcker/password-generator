@@ -1,5 +1,8 @@
 const lowercaseBox = document.getElementById("lowercase-letters");
 const uppercaseBox = document.getElementById("uppercase-letters");
+const numbers = document.getElementById("numbers");
+const specialChar = document.getElementById("special");
+const unambiguous = document.getElementById("unambiguous");
 
 const generateButton = document.getElementById("generate-button");
 let printOutput = document.getElementById("output");
@@ -7,7 +10,7 @@ let printOutput = document.getElementById("output");
 
 let generatePassword = () => {
 
-    let length = 8;
+    let length = 12;
     // let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let charset = "";
     let output = "";
@@ -19,6 +22,17 @@ let generatePassword = () => {
     if (uppercaseBox.checked) {
         charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
+    if (numbers.checked) {
+        charset += "0123456789";
+    }
+    if (specialChar.checked) {
+        // escape backslash with another backslash
+        charset += "~!@#$%^&*_-+=`|\\(){}[]:;\"'<>,.?/";
+    }
+
+    // if (unambiguous.checked) {
+    //     charset -= "l1IO0";
+    // }
 
     //add random characters from the charset to the generated password
     for (let i = 0, n = charset.length; i < length; ++i) {
