@@ -39,9 +39,15 @@ let generatePassword = () => {
         charset += "~!@#$%^&*_-+=`|\\(){}[]:;\"'<>,.?/";
     }
 
-    // if (unambiguous.checked) {
-    //     charset -= "l1IO0";
-    // }
+    //getting rid of ambiguous characters
+    if (unambiguous.checked) {
+        // charset -= "l1IO0";
+        charset = charset.replace("l", "");
+        charset = charset.replace("1", "");
+        charset = charset.replace("I", "");
+        charset = charset.replace("O", "");
+        charset = charset.replace("0", "");
+    }
 
     //add random characters from the charset to the generated password
     for (let i = 0, n = charset.length; i < length; ++i) {
@@ -50,6 +56,7 @@ let generatePassword = () => {
 
     // print the random password
     printOutput.innerHTML = output;
+    console.log(charset);
 }
 
 // generate random password and print the output when button is clicked

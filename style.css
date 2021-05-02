@@ -35,7 +35,7 @@ main {
 .output-container {
     font-size: 1.7em;
     font-weight: bold;
-    margin: 2em 0;
+    margin: 1.3em 0;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ main {
 
 /*copy button styles*/
 .fa-copy {
-    margin-top: 1.5em;
+    margin-top: 1.3em;
     color: gray;
     cursor: pointer;
 }
@@ -87,7 +87,7 @@ main {
     background-color: hsl(214, 83%, 57%);
     color: white;
     font-size: 1.2rem;
-    margin-top: 1.5em;
+    margin-top: 1.3em;
 }
 
 .button:hover {
