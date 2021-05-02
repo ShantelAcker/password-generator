@@ -5,9 +5,17 @@ const specialChar = document.getElementById("special");
 const unambiguous = document.getElementById("unambiguous");
 
 const generateButton = document.getElementById("generate-button");
-let printOutput = document.getElementById("output");
-const copyButton = document.getElementById("")
+const printOutput = document.getElementById("output");
+const copyButton = document.getElementById("copy-button");
 
+let copyPassword = () => {
+    //using clipboard api to copy the output
+    const outputValue = printOutput.value;
+    navigator.clipboard.writeText(outputValue);
+    alert("Password Copied!");
+}
+//copy the output when the copy button is pressed
+copyButton.onclick = copyPassword;
 
 let generatePassword = () => {
 

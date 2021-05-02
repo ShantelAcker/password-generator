@@ -11,11 +11,14 @@
 </head>
 
 <body>
-    <h1>Password Generator</h1>
-    <div class="main">
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+    <main>
         <h2>Click the button below to generate a random password:</h2>
         <div class="output-container">
-            <p class="output" id="output">V4ld0$!9bjd*</p>
+            <!-- <p class="output" id="output">V4ld0$!9bjd*</p> -->
+            <textarea rows="1" readonly class="output" id="output">V4ld0$!9bjd*</textarea>
             <i class="far fa-copy" id="copy-button"></i>
         </div>
 
@@ -33,17 +36,17 @@
                 <label for="numbers">Numbers</label>
             </div>
             <div class="input-group">
-                <input type="checkbox" class="checkbox" id="special">
+                <input type="checkbox" class="checkbox" id="special" checked>
                 <label for="special">Special Characters</label>
             </div>
-            <div class="input-group">
+            <!-- <div class="input-group">
                 <input type="checkbox" class="checkbox" id="unambiguous">
                 <label for="unambiguous">Unambiguous Characters</label>
-            </div>
+            </div> -->
         </div>
 
         <button id="generate-button" class="button">Generate Password</button>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
