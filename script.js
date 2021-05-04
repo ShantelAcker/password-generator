@@ -1,3 +1,6 @@
+const passwordLength = document.getElementById("password-length");
+const passwordSlider = document.getElementById("password-slider");
+
 const lowercaseBox = document.getElementById("lowercase-letters");
 const uppercaseBox = document.getElementById("uppercase-letters");
 const numbers = document.getElementById("numbers");
@@ -7,6 +10,12 @@ const unambiguous = document.getElementById("unambiguous");
 const generateButton = document.getElementById("generate-button");
 const printOutput = document.getElementById("output");
 const copyButton = document.getElementById("copy-button");
+
+//show the default slider value when the page loads
+passwordLength.innerHTML = passwordSlider.value;
+
+//show the slider value when it gets moved
+passwordSlider.oninput = () => passwordLength.innerHTML = passwordSlider.value;
 
 let copyPassword = () => {
     //using clipboard api to copy the output
@@ -19,7 +28,7 @@ copyButton.onclick = copyPassword;
 
 let generatePassword = () => {
 
-    let length = 12;
+    let length = passwordSlider.value;
     // let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let charset = "";
     let output = "";
