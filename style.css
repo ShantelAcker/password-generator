@@ -33,9 +33,14 @@ main {
 /* slider styles */
 .slider-container {
     width: 100%;
+    margin: 1.3em 0;
 }
 
-
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .7em;
+}
 
 /* output styles */
 
@@ -43,8 +48,10 @@ main {
     font-size: 1.7em;
     font-weight: bold;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    margin-top: 3.5em;
 }
 
 .output {
@@ -52,22 +59,25 @@ main {
     background-color: transparent;
     resize: none;
     outline: none;
-    /* overflow: hidden; */
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 500;
     height: auto;
     width: 60%;
 }
 
 /*copy button styles*/
 .fa-copy {
-    margin-top: 1.3em;
+    
     color: rgba(128, 128, 128, 0.5);
     cursor: pointer;
 }
 
 .fa-copy:hover {
     color: hsl(214, 83%, 57%);
+}
+
+.copy-button {
+    margin: 1.1em 0;
 }
 
 /* form styles */
@@ -145,4 +155,50 @@ input[type="checkbox"]:checked:hover {
 
 input[type="checkbox"]:checked:after {
     display: block;
+}
+
+/* custom range slider styles */
+input[type="range"] {
+    appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: hsl(214, 83%, 57%);
+    height: .5em;
+}
+   
+input[type="range"]::-moz-range-track {
+    background: hsl(214, 83%, 57%);
+    height: .5em;
+}
+   
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: white;
+    margin-top: -5px;
+    border-radius: 50%;
+}
+   
+   input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background: white;
+    margin-top: -5px;
+    border-radius: 50%;
+}
+   
+/* responsive styles */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-left: .3em;
+        margin-top: .1em;
+    }
+
+    .output {
+        width: 100%;
+    }
+  
 }

@@ -23,6 +23,7 @@ let copyPassword = () => {
     navigator.clipboard.writeText(outputValue);
     alert("Password Copied!");
 }
+
 //copy the output when the copy button is pressed
 copyButton.onclick = copyPassword;
 
@@ -65,7 +66,6 @@ let generatePassword = () => {
 
     // print the random password
     printOutput.innerHTML = output;
-    console.log(charset);
 }
 
 // generate random password and print the output when button is clicked
