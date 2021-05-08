@@ -26,10 +26,6 @@ h2 {
     margin: 0em 1em;
 }
 
-main {
-    margin-top: 3em;
-}
-
 /* slider styles */
 .slider-container {
     width: 100%;
@@ -78,8 +74,7 @@ h3 {
 }
 
 /*copy button styles*/
-.fa-copy {
-    
+.fa-copy {    
     color: rgba(128, 128, 128, 0.5);
     cursor: pointer;
     border-radius: 2px;;
@@ -237,6 +232,12 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
     }
 
+    /* bringing content more towards top of page on mobile */
+    .output-container {
+        margin-top: 1.5em;
+    }
+
+    /* removing focus styles on mobile */
     .fa-copy:focus {
         outline: none;
         color: gray;
