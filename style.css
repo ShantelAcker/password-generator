@@ -171,9 +171,6 @@ input[type="checkbox"]:after {
     display: none;
 }
 
-input[type="checkbox"]:hover {
-    background-color: #bebdbd;
-}
 
 input[type="checkbox"]:checked {
     background-color: hsl(214, 83%, 57%);
@@ -210,6 +207,7 @@ input[type="range"]::-webkit-slider-thumb {
     background: white;
     margin-top: -5px;
     border-radius: 50%;
+    filter: drop-shadow(2px 2px 6px gray);
 }
    
    input[type="range"]::-moz-range-thumb {
@@ -218,6 +216,8 @@ input[type="range"]::-webkit-slider-thumb {
     background: white;
     margin-top: -5px;
     border-radius: 50%;
+    filter: drop-shadow(2px 2px 10px gray);
+
 }
    
 /* responsive styles */
@@ -254,5 +254,4 @@ input[type="range"]::-webkit-slider-thumb {
     .button:focus {
         outline: none;
     }
-  
 }
